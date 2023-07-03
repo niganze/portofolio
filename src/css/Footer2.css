@@ -1,0 +1,163 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #6ab2fd;
+    color: #fff;
+    padding: 20px;
+  }
+  .About,
+  .Courses,
+  .Services {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .About,
+  .Courses,
+  .Services:hover {
+    flex: 1;
+    margin-right: 20px;
+   
+  }
+  .About {
+    margin-right: 20px;
+  }
+  .Courses h5,
+  .Services h5 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .About h5{
+    font-size: 20px;
+    margin-bottom: 2px;
+    color:white;
+    cursor: pointer;
+  }
+  .About ul,
+  .Courses ul,
+  .Services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .About ul li,
+  .Courses ul li,
+  .Services ul li {
+    margin-bottom: 10px;
+  }
+  
+  .About ul li a,
+  .Courses ul li a,
+  .Services ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 0.3s ease-in-out;
+    color: #fdfdfd;
+  }
+  
+  
+  .subscribe {
+    flex: 1;
+  }
+  
+  .subscribe h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .subscribe button {
+    background-color: #f5f2ec;
+    color: #525FE1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .social-networks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  .social-networks svg {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+  
+
+  /* Media query for small screens */
+@media only screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .About,
+  .Courses,
+  .Services,
+  .subscribe {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .About {
+    order: 1;
+  }
+  
+  .Courses {
+    order: 2;
+  }
+  
+  .Services {
+    order: 3;
+  }
+  
+  .subscribe {
+    order: 4;
+  }
+  
+  .social-networks {
+    margin-top: 50px;
+  }
+}
+
+/* Media query for medium and large screens */
+@media only screen and (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+  }
+  
+  .About,
+  .Courses,
+  .Services {
+    margin-right: 20px;
+    width: calc(33.33% - 20px);
+  }
+  .subscribe {
+    width: calc(33.33% - 20px);
+  }
+  
+  .social-networks {
+    margin-top: 0;
+  }
+}

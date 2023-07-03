@@ -1,0 +1,101 @@
+/* main container */
+.container {
+    display: flex;
+  }
+  
+  /* sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* sidebar logo */
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* sidebar menu */
+  .sidebar .menu {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .sidebar .menu li.active {
+    background-color: #555;
+  }
+  
+  .sidebar .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar .menu a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #555;
+  }
+  
+  /* main content */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* navbar profile picture */
+  .navbar .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  /* navbar notification icon */
+  .navbar .notification {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  /* responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .navbar {
+      padding: 0;
+    }
+    
+    .navbar .profile-picture {
+      display: none;
+    }
+  }
+  

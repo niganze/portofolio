@@ -1,0 +1,195 @@
+
+.About_service {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .About_service h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+  
+  .About_service p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .About_service_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left {
+    width: 60%;
+    padding-right: 40px;
+  }
+  
+  /* .rightY {
+    width: 40%;
+  }
+  .about_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .rightY img {
+    width: 80%;
+    border-radius: 20%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rightY h5 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  
+  .rightY p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+   */
+   .rightY {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .rightY img {
+    width: 80%;
+    max-height: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+  }
+  
+  .rightY h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .about_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .rightY p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  
+  .rightY button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rightY button:hover {
+    background-color: #0c0c0c;
+  }
+  
+  button {
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+  }
+  
+  button:hover {
+    background-color: #283593;
+  }
+  
+  /* Styles for the Skills section */
+.skilss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    position: relative;
+    width: 45%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  
+  .skill h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 16px;
+  }
+  
+  .skill h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding: 0 16px;
+  }
+  
+  .skill-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #e0e0e0;
+  }
+  
+  .fill-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+  }
+  
+  .fill-bar.html {
+    width: 95%;
+    background-color: #007acc;
+  }
+  
+  .fill-bar.css {
+    width: 85%;
+    background-color: #2c3e50;
+  }
+  
+  .fill-bar.javascript {
+    width: 70%;
+    background-color: #f0db4f;
+  }
+  
+  .fill-bar.php {
+    width: 85%;
+    background-color: #777bb4;
+  }
+  
+  .fill-bar.node {
+    width: 90%;
+    background-color: #73b627;
+  }
+  .fill-bar.react {
+    width: 60%;
+    background-color: #277db6;
+  }

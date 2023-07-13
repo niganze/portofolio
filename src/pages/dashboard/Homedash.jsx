@@ -2,10 +2,9 @@ import React from 'react'
 
 const Homedash = () => {
   return (
-    <div>
-      this is  home   from my dashbord 
+  <div>
+    
     </div>
-  )
-}
+  )}
 
 export default Homedash

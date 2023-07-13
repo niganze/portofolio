@@ -1,19 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Typography,
-  Grid,
-  Paper,
-  List,
-  ListItem,
-  ListItemText,
-  IconButton,
-  AppBar,
-  Toolbar,
-  Button,
-} from "@material-ui/core";
-import { AccountCircle, Notifications } from "@material-ui/icons";
+import {Typography,Grid,Paper,List,ListItem,ListItemText,IconButton,AppBar,Toolbar,Button,} from "@material-ui/core";
+import { AccountCircle, Notifications} from "@material-ui/icons";
+
 
 const drawerWidth = 240;
 
@@ -33,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
   },
   sidebarPaper: {
     width: drawerWidth,
-    background: "#222",
-    color: "#FFF",
+    background: "#white",
+    color: "FFF",
     padding: theme.spacing(3),
   },
   content: {
@@ -48,18 +38,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     height: 200,
     background: "linear-gradient(to right, #FF5F6D, #FFC371)",
-    color: "#FFF",
+    color: "white",
   },
-  footer: {
-    textAlign: "center",
-    background: "FFF",
-    padding: theme.spacing(1),
-    marginTop: "auto",
-    position: "fixed",
-    left: 0,
-    bottom: 0,
-    width: "100%",
-  },
+
   iconsContainer: {
     display: "flex",
     justifyContent: "flex-end",
@@ -74,12 +55,18 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
+
   return (
-    <AppBar position="fixed" className={classes.appBar}>
+    <AppBar
+      position="fixed"
+      className={classes.appBar}
+      style={{ background: "#6ab2fd" }}
+    >
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           Dashboard
         </Typography>
+
         <Button color="inherit">Home</Button>
         <Button color="inherit">Add More</Button>
         <IconButton edge="start" color="inherit">
@@ -93,6 +80,7 @@ const Navbar = () => {
   );
 };
 
+
 const Dashboard = () => {
   const classes = useStyles();
 
@@ -104,22 +92,42 @@ const Dashboard = () => {
           <Typography variant="h6">Menu</Typography>
           <List component="nav">
             <ListItem button>
-              <ListItemText primary="Experiences" />
+              <ListItemText primary="Home dashbord " />
             </ListItem>
             <ListItem button>
-              <Link to="./dashboard/skills">
+              <Link to="expertness">
+                <ListItemText primary="Tools Expertness" />
+              </Link>
+            </ListItem>
+            <ListItem button>
+              <Link to="skills">
                 {" "}
                 <ListItemText primary="Skills" />{" "}
               </Link>
             </ListItem>
             <ListItem button>
-              <ListItemText primary="Time Available" />
+              <ListItemText primary="Qulification" />
             </ListItem>
             <ListItem button>
-              <ListItemText primary="Time Available" />
+              <ListItemText primary="Project mamagement" />
             </ListItem>
             <ListItem button>
-              <ListItemText primary="Time Available" />
+              <ListItemText primary="Expert Technician " />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Message management "/>
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary=" Blog Post site" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary=" Blog Post site" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary=" Update and more notification " />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary=" Blog Post site" />
             </ListItem>
           </List>
         </Paper>

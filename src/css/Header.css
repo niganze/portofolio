@@ -1,38 +1,4 @@
-/* .nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6ab2fd;
-    height: 70px;
-    padding: 0 50px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .join{
-    border-radius: 12px;
-  }
-  .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    margin-left: 30px;
-    font-weight: bold;
-  }
-  
-  .links a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-   */
+
 
 
    /* Header.css */
